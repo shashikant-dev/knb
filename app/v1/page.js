@@ -133,6 +133,11 @@ export default function AdminDashboard() {
           </div>
         </div>
 
+        {/* Contact Chart - Full Width */}
+        <div className="mb-8">
+          <ContactChart />
+        </div>
+
         <div className="grid md:grid-cols-1 gap-6 mb-8">
           <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-primary-700">
             <div className="flex items-center justify-between">
@@ -150,8 +155,7 @@ export default function AdminDashboard() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          <ContactChart />
+        <div className="grid md:grid-cols-2 gap-6">
           
           <div className="bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-xl font-bold mb-4 flex items-center">
