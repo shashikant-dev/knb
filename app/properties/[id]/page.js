@@ -121,7 +121,7 @@ export default function PropertyDetailPage() {
                 <h2 className="text-2xl font-bold mb-4">Amenities</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                   {property.amenities.map((amenity, index) => (
-                    <div key={index} className="bg-gray-100 px-3 py-2 rounded-lg text-sm">
+                    <div key={index} className="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm">
                       {amenity}
                     </div>
                   ))}
