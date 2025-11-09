@@ -96,7 +96,7 @@ export default function HotelDetailPage() {
                                     </div>
                                 </div>
                                 <div className="text-right">
-                                    <div className="text-3xl font-bold text-primary-500 mb-2">{hotel.price}</div>
+                                    <div className="text-3xl font-bold text-primary-500 mb-2">₹{hotel.price}</div>
                                     <span className="text-gray-500">per night</span>
                                 </div>
                             </div>
@@ -188,7 +188,7 @@ export default function HotelDetailPage() {
                     <div className="lg:col-span-1">
                         <div className="bg-white rounded-lg shadow-lg p-6 sticky top-8">
                             <div className="text-center mb-6">
-                                <div className="text-4xl font-bold text-primary-500 mb-2">{hotel.price}</div>
+                                <div className="text-4xl font-bold text-primary-500 mb-2">₹{hotel.price}</div>
                                 <p className="text-gray-600">per night</p>
                             </div>
 
@@ -228,33 +228,6 @@ export default function HotelDetailPage() {
                             >
                                 Book Now
                             </Link>
-
-                            <div className="border-t pt-6">
-                                <h4 className="font-semibold text-gray-900 mb-4">Contact Information</h4>
-                                <div className="space-y-3">
-                                    <div className="flex items-center text-gray-600">
-                                        <Phone className="h-4 w-4 mr-3 text-primary-500" />
-                                        <div>
-                                            <p className="text-sm font-medium">Phone</p>
-                                            <p className="text-sm">+1 (555) 123-4567</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center text-gray-600">
-                                        <Mail className="h-4 w-4 mr-3 text-primary-500" />
-                                        <div>
-                                            <p className="text-sm font-medium">Email</p>
-                                            <p className="text-sm">hotels@knbgroup.com</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start text-gray-600">
-                                        <MapPin className="h-4 w-4 mr-3 text-primary-500 mt-0.5" />
-                                        <div>
-                                            <p className="text-sm font-medium">Location</p>
-                                            <p className="text-sm">{hotel.location}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
