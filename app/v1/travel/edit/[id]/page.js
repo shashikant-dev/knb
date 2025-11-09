@@ -251,7 +251,7 @@ export default function EditTravelPage() {
               <button
                 type="button"
                 onClick={() => addArrayField('includes')}
-                className="mt-2 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600"
+                className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
               >
                 Add Item
               </button>
@@ -282,7 +282,7 @@ export default function EditTravelPage() {
               <button
                 type="button"
                 onClick={() => addArrayField('highlights')}
-                className="mt-2 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600"
+                className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
               >
                 Add Highlight
               </button>
@@ -300,7 +300,7 @@ export default function EditTravelPage() {
             <button
               type="submit"
               disabled={loading}
-              className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 disabled:opacity-50"
+              className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50"
             >
               {loading ? 'Updating...' : 'Update Package'}
             </button>
