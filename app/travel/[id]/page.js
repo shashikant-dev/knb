@@ -76,7 +76,7 @@ export default function TravelDetailPage() {
             <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Package Details</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">{travel.description}</p>
-              
+
               {travel.highlights && travel.highlights.length > 0 && (
                 <div className="mb-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Highlights</h3>
@@ -154,7 +154,7 @@ export default function TravelDetailPage() {
                 <div className="text-3xl font-bold text-primary-600 mb-2">
                   {travel.price}
                 </div>
-                <p className="text-gray-600">per person</p>
+                <p className="text-gray-600">Per Person</p>
               </div>
 
               <div className="space-y-4 mb-6">
@@ -164,7 +164,7 @@ export default function TravelDetailPage() {
                 </div>
                 <div className="flex items-center text-gray-600">
                   <Calendar className="w-5 h-5 mr-3 text-primary-500" />
-                  <span>{travel.duration}</span>
+                  <span>{travel.duration} Day's</span>
                 </div>
                 {travel.maxGuests && (
                   <div className="flex items-center text-gray-600">
@@ -174,7 +174,7 @@ export default function TravelDetailPage() {
                 )}
               </div>
 
-              <button 
+              <button
                 onClick={handleBookNow}
                 className="w-full bg-primary-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
               >

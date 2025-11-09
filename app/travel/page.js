@@ -119,12 +119,12 @@ export default function TravelPage() {
                                         <div className="flex items-center space-x-4 mb-4">
                                             <div className="flex items-center">
                                                 <Clock className="h-4 w-4 mr-1" />
-                                                <span>{travel.duration}</span>
+                                                <span>{travel.duration} Day's</span>
                                             </div>
                                             {travel.maxGuests && (
                                                 <div className="flex items-center">
                                                     <Users className="h-4 w-4 mr-1" />
-                                                    <span>Max {travel.maxGuests}</span>
+                                                    <span>Max {travel.maxGuests} guests</span>
                                                 </div>
                                             )}
                                         </div>
