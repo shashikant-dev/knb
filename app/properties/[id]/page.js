@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
-import { MapPin, Bed, Bath, Car, Square } from 'lucide-react';
+import { MapPin, Bed, Bath, Car, RectangleHorizontal } from 'lucide-react';
 import ImageCarousel from '../../../components/ImageCarousel';
 
 export default function PropertyDetailPage() {
@@ -95,7 +95,7 @@ export default function PropertyDetailPage() {
                 )}
                 {property.area && (
                   <div className="flex items-center">
-                    <Square className="h-5 w-5 mr-2 text-gray-500" />
+                    <RectangleHorizontal className="h-5 w-5 mr-2 text-gray-500" />
                     <span>{property.area}</span>
                   </div>
                 )}
