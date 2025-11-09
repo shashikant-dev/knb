@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
-import { MapPin, Bed, Bath, Car, RectangleHorizontal } from 'lucide-react';
+import { MapPin, Bed, Bath, Car, RectangleHorizontal, MessageCircle } from 'lucide-react';
 import ImageCarousel from '../../../components/ImageCarousel';
 
 export default function PropertyDetailPage() {
@@ -69,9 +69,18 @@ export default function PropertyDetailPage() {
                 </span>
               </div>
             </div>
-            <p className={`text-3xl font-bold mb-6 ${
-              property.category === 'rent' ? 'text-green-600' : 'text-orange-600'
-            }`}>{property.price}</p>
+            <div className="flex items-center justify-between mb-6">
+              <p className={`text-3xl font-bold ${
+                property.category === 'rent' ? 'text-green-600' : 'text-orange-600'
+              }`}>{property.price}</p>
+              <a
+                href="/contact?service=property"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+              >
+                <MessageCircle className="h-5 w-5 mr-2" />
+                Inquire Now
+              </a>
+            </div>
 
             {property.type === 'residential' && (
               <div className="flex space-x-6 mb-6">
