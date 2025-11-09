@@ -1,0 +1,35 @@
+{
+  "name": "knb-group-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "init-db": "node scripts/init-mysql.js",
+    "migrate-contacts": "node scripts/migrate-contacts.js",
+    "migrate-prod": "node scripts/migrate-prod.js",
+    "test-db": "node scripts/test-connection.js",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.18",
+    "axios": "^1.9.0",
+    "formidable": "^3.5.4",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.511.0",
+    "mysql2": "^3.15.2",
+    "next": "14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}
