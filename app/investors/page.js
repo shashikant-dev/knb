@@ -83,9 +83,9 @@ export default function InvestorsPage() {
                                                 <Link href={avenue.link} className="inline-flex items-center text-primary-500 hover:text-primary-600 font-semibold text-sm sm:text-base transition-colors">
                                                     Explore Opportunities <ArrowRight className="ml-1 h-4 w-4 transform hover:translate-x-1 transition-transform" />
                                                 </Link>
-                                                <Link href="/contact" className="inline-flex items-center text-gray-600 hover:text-primary-500 font-semibold text-sm sm:text-base transition-colors">
+                                                {/* <Link href="/contact" className="inline-flex items-center text-gray-600 hover:text-primary-500 font-semibold text-sm sm:text-base transition-colors">
                                                     Contact Us <ArrowRight className="ml-1 h-4 w-4 transform hover:translate-x-1 transition-transform" />
-                                                </Link>
+                                                </Link> */}
                                             </div>
                                         </div>
                                     </div>
