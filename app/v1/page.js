@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import AdminLayout from '../../components/AdminLayout';
+import ContactChart from '../../components/ContactChart';
 import { Building, Hotel, MapPin, Plus, BarChart3, Users, Eye, FileText } from 'lucide-react';
 
 export default function AdminDashboard() {
@@ -149,7 +150,9 @@ export default function AdminDashboard() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
+          <ContactChart />
+          
           <div className="bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-xl font-bold mb-4 flex items-center">
               <BarChart3 className="h-5 w-5 mr-2" />
