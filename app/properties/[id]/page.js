@@ -41,10 +41,17 @@ export default function PropertyDetailPage() {
             <ImageCarousel images={property.images} title={property.name} />
             <h1 className="text-3xl font-bold mb-4">{property.name}</h1>
             <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center text-gray-600">
-                <MapPin className="h-5 w-5 mr-2" />
-                <span className="text-lg">{property.location}</span>
-              </div>
+              {property.location && property.mapsUrl && (
+                <a
+                  href={property.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  <MapPin className="h-5 w-5 mr-2" />
+                  <span className="text-lg">{property.location}</span>
+                </a>
+              )}
               <div className="flex space-x-2">
                 <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
                   property.category === 'rent'
