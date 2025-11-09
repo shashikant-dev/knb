@@ -31,7 +31,11 @@ class Blog {
 
   static async create(data) {
     const connection = await dbConnect();
-    const image = data.image ? Buffer.from(data.image, 'base64') : null;
+    let image = null;
+    if (data.image) {
+      const base64Data = data.image.replace(/^data:image\/[a-z]+;base64,/, '');
+      image = Buffer.from(base64Data, 'base64');
+    }
 
     const [result] = await connection.execute(`
       INSERT INTO blogs (
@@ -47,7 +51,11 @@ class Blog {
 
   static async update(id, data) {
     const connection = await dbConnect();
-    const image = data.image ? Buffer.from(data.image, 'base64') : null;
+    let image = null;
+    if (data.image) {
+      const base64Data = data.image.replace(/^data:image\/[a-z]+;base64,/, '');
+      image = Buffer.from(base64Data, 'base64');
+    }
 
     await connection.execute(`
       UPDATE blogs SET
